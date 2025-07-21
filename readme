@@ -1,0 +1,34 @@
+# 🎲 Bac-Bo Signals Autobot
+
+Um bot automatizado que analisa padrões do jogo **Bac Bo** em tempo real e envia sinais de entrada diretamente para um canal do **Telegram**.  
+Baseado em estratégias como alternância, dominância, tripla, espelhamento, entre outras.
+
+---
+
+## 🚀 Funcionalidades
+
+- Coleta automática de resultados do site [casinoscores.com](https://casinoscores.com/es/bac-bo/)
+- Detecta padrões com base em estatísticas reais
+- Envia sinais no canal do Telegram com confiança estimada
+- Aplica automaticamente GALE 1 em caso de LOSS
+- Verifica resultado após 60 segundos e envia WIN ou LOSS
+- Loop contínuo com análise automática 24/7
+
+---
+
+## 🧠 Estratégias implementadas
+
+- Alternância
+- Repetição
+- ZigZag curto
+- Dominância Player
+- Dominância Banker
+- Tripla (P ou B)
+- Espelhamento
+- TIE Frequente  
+*(Pronto para expansão com +22 padrões)*
+
+---
+
+## 📦 Estrutura do Projeto
+
