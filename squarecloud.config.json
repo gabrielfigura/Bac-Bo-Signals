@@ -1,0 +1,5 @@
+{
+  "name": "bacbo-autobot",
+  "language": "python",
+  "main": "main.py"
+}
