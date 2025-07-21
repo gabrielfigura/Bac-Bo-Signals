@@ -1,8 +1,8 @@
 import time
-from bot.scraper import get_last_rounds
-from bot.strategies import detect_strong_pattern
-from bot.telegram_bot import send_signal, delete_message
-from bot.utils import validate_result
+from scraper import get_last_rounds
+from strategies import detect_strong_pattern
+from telegram_bot import send_signal, delete_message
+from utils import validate_result
 
 last_signal_time = 0
 last_msg_id = None
