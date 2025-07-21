@@ -16,7 +16,6 @@ while True:
     now = time.time()
 
     if pattern and (now - last_signal_time) > 60:
-        # Decidir jogada com base no padrão
         if pattern in ["repeticao", "dominancia_b", "tripla_b"]:
             entrada = "🔴🔴🔴"
             expected = "B"
@@ -41,11 +40,9 @@ Validade: 1 minuto
 Confiança: {80 + int(now)%20}%
 """)
 
-        # Validação do sinal após 60s
         resultado = validate_result(expected)
         send_signal(f"Resultado: {resultado}")
 
-        # Se for LOSS, aplicar 1º GALE
         if resultado == "LOSS ❌":
             gale_active = True
             send_signal("📢 Aplicando GALE 1...")
